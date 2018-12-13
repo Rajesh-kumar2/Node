@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+    h1= title
+    form(method="post")
+        input(type="text",placeholder="Username",name="uname",value=userToEdit.username)
+        input(type="email",placeholder="Email",name="email",value=userToEdit.email)
+        button(type="submit") Update User

@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    h1= title
+    h2= user._id
+    h3= user.username
+    h3= user.email
+
+    form(method="post")
+        h3.text-danger Are you sure, you want to delete?
+        button(type="submit") Delete User
+        
