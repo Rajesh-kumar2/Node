@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%=blocks.title%>
+    </title>
+
+    <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <%-blocks.css%>
+</head>
+
+<body>
+    <div id="page" class="container">
+        <header class="row">
+            <%-partial('partials/topNavigation')%>
+        </header>
+
+        <section class="row">
+            <%-body -%>
+        </section>
+        <hr class="row" />
+        <footer class="row">
+            <p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
+        </footer>
+    </div>
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            var current = location.pathname;
+            $('header .navbar-nav').find('li.active').removeClass('active');
+            $('header .navbar-nav a').each(function () {
+                var $this = $(this);
+                // if the current path is like this link, make it active
+                if ($this.attr('href').indexOf(current) !== -1) {
+                    $(this).parent('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <%-blocks.script%>
+</body>
+
+</html>

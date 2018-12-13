@@ -1,0 +1,70 @@
+<% layout('layout') -%>
+
+<% block('title', title); -%><br>
+
+<section id="body" class="row">
+    <div class="page-header">
+        <h1>Contact Us</h1>
+    </div>
+    <p class="lead">This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#formtab" data-toggle="tab">Contact Tab</a></li>
+        <li><a href="#addresstab" data-toggle="tab">Address Tab</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="formtab" class="tab-pane well active">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Your Name</label>
+                    <div class="col-md-8">
+                        <input class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Email</label>
+                    <div class="col-md-8">
+                        <input class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Reason</label>
+                    <div class="col-md-8">
+                        <select class="form-control">
+                            <option>Adoration</option>
+                            <option>Ordering a White Russian</option>
+                            <option>Complaint</option>
+                            <option>I am lost</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Message</label>
+                    <div class="col-md-8">
+                        <textarea cols="40" rows="6" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-8 col-md-offset-2">
+                        <input type="submit" value="Submit" class="btn btn-success btn-block" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="addresstab" class="tab-pane well">
+            <h3>Our fake address</h3>
+            <div>
+                <address>
+                    Big Lebowski Fan Page<br /> 123 Main Street<br /> Rug Ties The Room Together, CA 98765<br />
+                    <abbr title="Phone">P:</abbr> 425.555.0100
+                </address>
+                <address>
+                    <strong>Support:</strong> <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
+                    <strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</section>
