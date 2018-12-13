@@ -1,0 +1,32 @@
+extends layout
+block content
+    table.table.table-hover.table-bordered
+        thead
+            tr
+                th Id
+                th Name
+        tbody
+            each emp in empList
+                tr
+                    td= emp.id
+                    td= emp.name
+
+block footer
+    p Copyright Synechron
+
+//- doctype html
+//- html
+//-     head
+//-         title=ptitle
+//-     body
+//-         h2=ptitle
+//-         table
+//-             thead
+//-                 tr
+//-                     th Id
+//-                     th Name
+//-             tbody
+//-                 each emp in empList
+//-                     tr
+//-                         td= emp.id
+//-                         td= emp.name

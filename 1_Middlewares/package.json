@@ -1,0 +1,21 @@
+{
+  "name": "5_expressapp_withviews",
+  "version": "1.0.0",
+  "description": "Express App using View Engine",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Manish",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

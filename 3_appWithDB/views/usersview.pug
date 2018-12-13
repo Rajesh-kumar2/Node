@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1= title
+    a(href="create") Create User
+    br
+    table.table.table-bordered.table-hover
+        thead
+            tr
+                th Username
+                th Email
+                th
+                th
+        tbody
+            each user in users
+                tr
+                    td= user.username
+                    td= user.email
+                    td  
+                        a(href="#") Edit
+                    td
+                        a(href="/delete/"+user._id) Delete                        
+                        

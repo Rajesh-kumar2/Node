@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    h1= title
+    form(method="post", action="create")
+        input(type="text",placeholder="Username",name="uname")
+        input(type="email",placeholder="Email",name="email")
+        button(type="submit") Save User
+        
